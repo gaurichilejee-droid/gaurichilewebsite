@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal website - About me, projects, and contact info" />
+
+  <!-- Open Graph / Social previews -->
+  <meta property="og:title" content="gauri — Personal Website" />
+  <meta property="og:description" content="A short description about you and your work." />
+  <meta property="og:image" content="assets/images/profile.svg" />
+  <meta property="og:type" content="website" />
+
+  <title>Gauri Chile — Personal Website</title>
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="assets/styles/styles.css">
+
+  <!-- Cursor effect elements -->
+  <style>
+    .cursor-dot, .cursor-outline {
+      position: fixed;
+      top: 0; left: 0;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      z-index: 9999;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+<body>
+
+<!-- Cursor elements -->
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+
+<header class="site-header">
+  <nav class="nav container">
+    
+    <!-- Logo -->
+    <a class="brand" href="#">Gauri Chile</a>
+
+    <!-- 🌙 Dark Mode Button (ADDED HERE) -->
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+
+    <!-- Nav Menu -->
+    <ul id="nav-menu" class="nav-menu" aria-hidden="true">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Certificates</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+<main class="container">
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Hi, I’m Gauri Chile 👋</h1>
+      <h2>Learner. Ambitious. Creative.</h2>
+      <p><a class="btn" href="#projects">Explore</a></p>
+    </div>
+
+    <div class="hero-image">
+      <img src="assets/images/profile.jpg" alt="Gauri Chile" class="profile-photo" width="450" height="450"/>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <ul>
+      <li>Computer Engineering Student at Fr. Conceicao Rodrigues College of Engineering, Bandra</li>
+      <li>Location: Mumbai, India</li>
+      <li>Interests: Problem Solving, Design, Reading, Music</li>
+    </ul>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="about">
+    <h2>Resume</h2>
+    <div class="pdf-container">
+      <iframe src="assets/resume/White Simple Student CV Resume.pdf" 
+              class="pdf-viewer" frameborder="0"></iframe>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="projects" class="projects">
+    <h2>Certificates</h2>
+
+    <div class="project-list">
+
+      <article class="project">
+        <img src="assets/images/project1.jpg" class="project-image" alt="Bit n Build Certificate">
+        <h3>Bit n Build</h3>
+        <p>Participation Certificate of BitnBuild'25 at FRCRCE where I collaborated with a team to prototype innovative solutions under a deadline.</p>
+      </article>
+
+      <article class="project">
+        <img src="assets/images/project2.jpg" class="project-image" alt="MATLAB Certificate">
+        <h3>MATLAB</h3>
+        <p>Completed a comprehensive MATLAB course covering data analysis, algorithms, and engineering problem solving.</p>
+      </article>
+
+      <article class="project">
+        <img src="assets/images/project3.jpg" class="project-image" alt="Machine Learning Certificate">
+        <h3>MATLAB Machine Learning</h3>
+        <p>Completed MATLAB Machine Learning, with skills in training models, predictive analytics, and data science workflows.</p>
+      </article>
+
+      <article class="project">
+        <img src="assets/images/project4.jpg" class="project-image" alt="Certificate of Merit">
+        <h3>Certificate of Merit</h3>
+        <p>Awarded for academic performance.</p>
+      </article>
+
+      <article class="project">
+        <img src="assets/images/project5.jpg" class="project-image" alt="Certificate of Excellence">
+        <h3>Certificate of Excellence</h3>
+        <p>Highest marks in Science and Technology.</p>
+      </article>
+
+      <article class="project">
+        <img src="assets/images/project6.jpg" class="project-image" alt="Road Safety Patrol">
+        <h3>Road Safety Patrol</h3>
+        <p>Enhanced leadership, civic responsibility, and enforcement skills.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- INTERESTS -->
+  <section id="interests" class="projects">
+    <h2>Interests</h2>
+
+    <div class="project-list">
+
+      <article class="project">
+        <img src="assets/images/interest1.jpg" class="project-image">
+      </article>
+
+      <article class="project">
+        <img src="assets/images/interest2.jpg" class="project-image">
+      </article>
+
+      <article class="project">
+        <img src="assets/images/interest3.jpg" class="project-image">
+      </article>
+
+      <article class="project">
+        <img src="assets/images/interest4.jpg" class="project-image">
+      </article>
+
+      <article class="project">
+        <img src="assets/images/interest6.jpg" class="project-image">
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email me at <a href="mailto:gaurichilejee@gmail.com">gaurichilejee@gmail.com</a></p>
+
+    <form id="contact-form" class="contact-form" method="POST" action="https://formspree.io/f/<your_form_id>">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+      </div>
+
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <input type="hidden" name="_subject" value="New message from your website" />
+
+      <div class="form-row form-actions">
+        <button type="submit" class="btn">Send message</button>
+        <span class="form-status" aria-live="polite"></span>
+      </div>
+    </form>
+
+    
+<div class="contact-bubbles">
+  <a href="https://www.linkedin.com/in/gauri-chile" target="_blank" class="bubble" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://github.com/gaurichile" target="_blank" class="bubble" aria-label="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+
+</section>
+</main>
+
+<footer class="site-footer container">
+  <p>© <span id="year"></span> Gauri Chile</p>
+</footer>
+
+<!-- Main JS -->
+<script src="assets/scripts/script.js"></script>
+
+<!-- Dark Mode JS -->
+<script src="theme-toggle.js"></script>
+
+<!-- Cursor Animation Script -->
+<script>
+  const dot = document.querySelector(".cursor-dot");
+  const outline = document.querySelector(".cursor-outline");
+
+  window.addEventListener("mousemove", e => {
+    dot.style.left = e.clientX + "px";
+    dot.style.top = e.clientY + "px";
+
+    outline.animate({
+      left: e.clientX + "px",
+      top: e.clientY + "px"
+    }, { duration: 200, fill: "forwards" });
+  });
+</script>
+
+<script>
+  // Set year in footer
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
